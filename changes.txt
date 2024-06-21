@@ -1,4 +1,7 @@
 
+2024-06-21 1.0.4:
+ - tested under Ubuntu 24.04 x64 GCC 14.1.0
+
 2023-12-13 1.0.4:
  - update Windows compile environment from VS 2017 to VS 2022
  - capable with C++17
@@ -24,7 +27,7 @@
  - all modules are support for Linux now
  - improve syslog and network performance
  - add format function in common
- - tested under CentOS 7 x64 1810 GCC 9.1
+ - tested under CentOS 7 x64 1810 GCC 9.1.0
  - tested under Windows 10 x64 1903 VS 2017 15.8.6
 
 2018-08-28 0.5.5:

@@ -1,7 +1,7 @@
 # FrameX
-V1.0.4 Build 20231213
+V1.0.4 Build 20240621
 
-© 2017-2023 Xu Rendong. All Rights Reserved.
+© 2017-2024 Xu Rendong. All Rights Reserved.
 
 ### Project Summary
 Basic Development Framework.
