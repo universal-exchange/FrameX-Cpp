@@ -1,4 +1,7 @@
 
+2024-07-30 1.0.4:
+ - improve plugins of plugin load dependency state check
+
 2024-06-21 1.0.4:
  - tested under Ubuntu 24.04 x64 GCC 14.1.0
 

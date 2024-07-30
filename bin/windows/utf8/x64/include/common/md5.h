@@ -48,7 +48,7 @@ namespace framex {
 	#define S44 21
 
 	// MD5 基础函数
-	#define F(x, y, z) (((x) & (y)) | ((~x) & (z)))
+	#define E(x, y, z) (((x) & (y)) | ((~x) & (z)))
 	#define G(x, y, z) (((x) & (z)) | ((y) & (~z)))
 	#define H(x, y, z) ((x) ^ (y) ^ (z))
 	#define I(x, y, z) ((y) ^ ((x) | (~z)))
@@ -58,7 +58,7 @@ namespace framex {
 
 	// 转换，从加法中隔离轮换以避免重复计算
 	#define FF(a, b, c, d, x, s, ac) { \
-		(a) += F ((b), (c), (d)) + (x) + ac; \
+		(a) += E ((b), (c), (d)) + (x) + ac; \
 		(a) = ROTATE_LEFT ((a), (s)); \
 		(a) += (b); \
 	}

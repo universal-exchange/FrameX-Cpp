@@ -10,7 +10,7 @@ License: BSD
 Website: https://github.com/gperftools/gperftools
 
 Library: Boost
-Version: 1.83.0
+Version: 1.85.0
 License: Boost
 Website: http://www.boost.org
 
