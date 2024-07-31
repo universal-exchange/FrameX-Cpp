@@ -39,6 +39,7 @@ namespace framex {
 		virtual ~Plugin_R();
 
 	public:
+		virtual void ReturnData( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, int32_t type, uint32_t size, const char* data ) = 0;
 		virtual void ReturnTask( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, int32_t code, std::string& info, std::string& data ) = 0;
 	};
 
@@ -65,7 +66,7 @@ namespace framex {
 		virtual bool Uninitialize() = 0;
 
 	public:
-		virtual std::string DirectCalc( int32_t func, int32_t form, std::string& args ) = 0;
+		virtual std::string DirectCall( int32_t func, int32_t form, std::string& args ) = 0;
 		virtual int32_t CancelTask( int32_t flag, int32_t task, int32_t unit, int32_t func ) = 0;
 		virtual int32_t AssignTask( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, std::string& common, std::string& custom ) = 0;
 	};
