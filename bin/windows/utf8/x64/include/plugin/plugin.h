@@ -33,15 +33,24 @@ namespace framex {
 		init = 0, load = 1, exec = 2, wait = 3, stop = 4, fail = 5, // 导入信息，已经加载，正常运行，等待运行，停止运行，发生异常
 	};
 
-	class FRAMEX_PLUGIN_EXPIMP Plugin_R {
+	class FRAMEX_PLUGIN_EXPIMP Plugin_T {
 	public:
-		Plugin_R();
-		virtual ~Plugin_R();
+		Plugin_T();
+		virtual ~Plugin_T();
 
 	public:
-		virtual void ReturnInfo( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, int32_t type, std::string& info ) = 0;
-		virtual void ReturnData( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, int32_t type, uint32_t size, const char* data ) = 0;
 		virtual void ReturnTask( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, int32_t code, std::string& info, std::string& data ) = 0;
+	};
+
+	class FRAMEX_PLUGIN_EXPIMP Plugin_C {
+	public:
+		Plugin_C();
+		virtual ~Plugin_C();
+
+	public:
+		virtual void ReturnInfo( int32_t call, int32_t func, int32_t form, int32_t type, std::string& info ) = 0;
+		virtual void ReturnData( int32_t call, int32_t func, int32_t form, int32_t type, uint32_t size, const char* data ) = 0;
+		virtual void ReturnCall( int32_t call, int32_t func, int32_t form, int32_t type, int32_t code, std::string& info, std::string& data ) = 0;
 	};
 
 	class FRAMEX_PLUGIN_EXPIMP Plugin_X {
@@ -53,7 +62,8 @@ namespace framex {
 		virtual ~Plugin_X();
 
 	public:
-		virtual void SetCallback( Plugin_R* plugin_r ) = 0;
+		virtual void SetCallback_T( Plugin_T* plugin_t ) = 0;
+		virtual void SetCallback_C( Plugin_C* plugin_c ) = 0;
 
 	public:
 		virtual bool Initialize() = 0;
@@ -68,6 +78,8 @@ namespace framex {
 
 	public:
 		virtual std::string DirectCall( int32_t func, int32_t form, std::string& args ) = 0;
+		virtual int32_t CancelCall( int32_t call, int32_t func ) = 0;
+		virtual int32_t AssignCall( int32_t call, int32_t func, int32_t form, std::string& args ) = 0;
 		virtual int32_t CancelTask( int32_t flag, int32_t task, int32_t unit, int32_t func ) = 0;
 		virtual int32_t AssignTask( int32_t flag, int32_t task, int32_t unit, int32_t func, int32_t form, std::string& common, std::string& custom ) = 0;
 	};
