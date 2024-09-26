@@ -1,5 +1,5 @@
 # FrameX
-V1.0.4 Build 20240731
+V1.0.4 Build 20240925
 
 © 2017-2024 Xu Rendong. All Rights Reserved.
 
