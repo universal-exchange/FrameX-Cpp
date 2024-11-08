@@ -1,0 +1,55 @@
+
+2024-09-25 1.0.4:
+ - improve plugins of plugin load dependency state check
+ - improve plugins Plugin_R and Plugin_X interface
+ - update Windows compile environment to VS 2022 17.11.4
+
+2024-06-21 1.0.4:
+ - tested under Ubuntu 24.04 x64 GCC 14.1.0
+
+2023-12-13 1.0.4:
+ - update Windows compile environment from VS 2017 to VS 2022
+ - capable with C++17
+
+2022-02-08 1.0.3:
+ - change project name from BasicX to FrameX
+ - improve syscfg, syslog, plugins
+ - plugins change module name to plugin
+ - network change module name to netlib
+ - replace third party library CPPFormatLibrary with fmt
+ - improve Plugin_X interface
+
+2019-12-17 1.0.2:
+ - improve network for remote control
+
+2019-12-09 1.0.1:
+ - improve plugins for remote control
+
+2019-09-25 1.0.0:
+ - fix some bugs
+
+2019-07-26 0.9.9:
+ - all modules are support for Linux now
+ - improve syslog and network performance
+ - add format function in common
+ - tested under CentOS 7 x64 1810 GCC 9.1.0
+ - tested under Windows 10 x64 1903 VS 2017 15.8.6
+
+2018-08-28 0.5.5:
+ - change syslog file open mode to _SH_DENYNO
+
+2018-08-09 0.5.4:
+ - add md5 compute function in common
+ - add asio_client and sock_client in network
+
+2018-06-01 0.5.3:
+ - add functions relating to string in common/assist.h
+
+2018-05-31 0.5.2:
+ - improve plugins, plugin_test_1, plugin_test_2
+
+2018-04-07 0.5.1:
+ - add winver function in common
+
+2018-02-28 0.5.0:
+ - release version 0.5.0

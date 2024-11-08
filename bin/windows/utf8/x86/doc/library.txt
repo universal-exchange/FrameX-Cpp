@@ -1,0 +1,45 @@
+
+Library: CMake
+Version: 3.27.9
+License: BSD
+Website: https://cmake.org
+
+Library: gperftools
+Version: 2.6.3
+License: BSD
+Website: https://github.com/gperftools/gperftools
+
+Library: Boost
+Version: 1.85.0
+License: Boost
+Website: http://www.boost.org
+
+Library: {fmt}
+Version: 10.1.1
+License: MIT
+Website: https://github.com/fmtlib/fmt
+
+Library: pugixml
+Version: 1.14.0
+License: MIT
+Website: https://github.com/zeux/pugixml
+
+Library: jsoncpp
+Version: 1.9.5
+License: MIT
+Website: https://github.com/open-source-parsers/jsoncpp
+
+Library: MariaDB Connector/C
+Version: 3.0.3
+License: LGPL
+Website: https://downloads.mariadb.org/connector-c
+
+Library: otlv4
+Version: 4.0.476
+License: BSD
+Website: http://otl.sourceforge.net
+
+Library: ajson
+Version: 0.2.2
+License: Boost
+Website: https://github.com/lordoffox/ajson
